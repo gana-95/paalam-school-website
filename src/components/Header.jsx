@@ -1,16 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <header>
       <nav className="navbar" aria-label="Main Navigation">
-        <div className="brand">
+        <div className="nav-links">
+          <Link to="/">
           <h1 className="school-name">Paalam School</h1>
+          </Link>
         </div>
 
         <ul className="nav-links">
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#resources">Resources</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/resources">Resources</Link></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>

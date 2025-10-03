@@ -1,21 +1,22 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Mission from "./components/Mission";
-import Resources from "./components/Resources";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import ResourcesPage from "./pages/ResourcesPage";
 
-export default function App(){
+export default function App() {
   return (
-    <>
+    <Router>
       <a className="skip-link" href="#main">Skip to content</a>
       <Header />
       <main id="main" tabIndex="-1">
-        <Hero />
-        <Mission />
-        <Resources />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </Router>
   );
 }
