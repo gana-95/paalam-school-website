@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../assets/img2.png";
+import profileImage from "../../assets/img2.png";
 
 export default function Mission() {
   return (
@@ -25,7 +25,12 @@ export default function Mission() {
 
         <div className="profile-content">
           <div className="profile-image-container">
-            <img src={profileImage} alt="School Activities" className="profile-image" />
+            <img 
+              src={profileImage} 
+              alt="Diverse group of students participating in collaborative learning activities at Paalam School" 
+              className="profile-image"
+              loading="lazy"
+            />
           </div>
           <div className="profile-text">
             <h2>Our Profile</h2>
