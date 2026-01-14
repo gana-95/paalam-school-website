@@ -15,13 +15,7 @@ export default function Header() {
 
   return (
     <header className={isScrolled ? 'scrolled' : ''}>
-      <div className="secondary-nav">
-        <ul className="secondary-nav-links">
-          <li><a href="#parent-portal">Parent Portal</a></li>
-          <li><a href="#staff-login">Staff Login</a></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </div>
+      
       
       <nav className="navbar" aria-label="Main Navigation">
         <Link to="/" className="logo-link">
@@ -33,6 +27,7 @@ export default function Header() {
           <li><Link to="/academics">Academics</Link></li>
           <li><Link to="/events">Student Life</Link></li>
           <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>
