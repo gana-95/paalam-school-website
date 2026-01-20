@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Academics from "./pages/Academics";
@@ -14,6 +15,7 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <a className="skip-link" href="#main">Skip to content</a>
       <Header />
       <main id="main" tabIndex="-1">
